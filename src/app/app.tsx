@@ -1,9 +1,9 @@
-import NxWelcome from './nx-welcome';
+import CorporateFraudPage from './nx-welcome';
 
 export function App() {
   return (
     <div>
-      <NxWelcome title="diaz-consulting-services" />
+      <CorporateFraudPage />
     </div>
   );
 }
