@@ -1,10 +1,12 @@
-import CorporateFraudPage from './nx-welcome';
+import { ModeToggle } from '@/components/mode-toggle';
+import Home from '../pages/home';
+import { ThemeProvider } from '@/components/theme-provider';
 
-export function App() {
+function App() {
   return (
-    <div>
-      <CorporateFraudPage />
-    </div>
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <Home />
+    </ThemeProvider>
   );
 }
 
