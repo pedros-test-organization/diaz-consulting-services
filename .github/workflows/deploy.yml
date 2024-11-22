@@ -20,10 +20,10 @@ jobs:
         node-version: '18'  # Use a Node.js version compatible with your app
 
     - name: Install dependencies
-      run: npm install
+      run: npm install --force
 
     - name: Build the app
-      run: npm run build
+      run: npx nx run diaz-consulting-services:build
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
