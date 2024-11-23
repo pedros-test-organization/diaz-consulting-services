@@ -1,10 +1,16 @@
-import CorporateFraudPage from './nx-welcome';
+import { ModeToggle } from '@/components/mode-toggle';
+import Home from '../pages/home-page';
+import { ThemeProvider } from '@/components/theme-provider';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Switch } from '@radix-ui/react-switch';
 
-export function App() {
+function App() {
   return (
-    <div>
-      <CorporateFraudPage />
-    </div>
+    <>
+      <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+        <Home />
+      </ThemeProvider>
+    </>
   );
 }
 
