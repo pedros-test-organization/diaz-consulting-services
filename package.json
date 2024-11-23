@@ -5,7 +5,9 @@
   "homepage": "https://pedros-test-organization.github.io/diaz-consulting-services/",
   "scripts": {
     "start": "nx serve",
-    "test": "nx test"
+    "test": "nx test",
+    "predeploy": "npx nx build diaz-consulting-services",
+    "deploy": "gh-pages -d build"
   },
   "private": true,
   "dependencies": {
@@ -101,7 +103,7 @@
     "jsdom": "~22.1.0",
     "nx": "20.1.2",
     "postcss": "8.4.38",
-    "prettier": "^2.8.8",
+    "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.8",
     "tailwindcss": "3.4.3",
     "typescript": "~5.4.2",
